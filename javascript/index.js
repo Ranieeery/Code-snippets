@@ -43,6 +43,37 @@ if (idade < 18) {
 console.log(
   idade < 18 ? "Criança" : idade >= 18 && idade < 60 ? "Adulto" : "Idoso"
 );
-
 //--------------------------
+let profisao = "bombeiro";
+let texto;
 
+switch (profisao) {
+  case "fiscal":
+    texto = "Camisa amarela";
+    break;
+  case "bombeiro":
+    texto = "Camisa vermelha";
+    break;
+  case "policial":
+    texto = "Camisa azul";
+    break;
+  default:
+    texto = "Camisa branca";
+    break;
+}
+console.log(texto);
+//--------------------------
+function getName() {
+  return nome;
+}
+
+console.log(getName());
+
+function setName(nome) {
+  this.nome = nome;
+  return `O nome salvo foi: ${nome}`;
+}
+
+console.log(setName(nome));
+//--------------------------
+const soma = (a, b) => a + b;
