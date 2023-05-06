@@ -77,3 +77,82 @@ function setName(nome) {
 console.log(setName(nome));
 //--------------------------
 const soma = (a, b) => a + b;
+
+function sqrtSoma(a, b) {
+  function sqrt(x) {
+    return Math.sqrt(x);
+  }
+  return sqrt(a) + sqrt(b);
+}
+
+console.log(sqrtSoma(4, 5));
+
+function sqrtSoma(a, b) {
+  const sqrt = (x) => Math.sqrt(x);
+  return sqrt(a) + sqrt(b);
+}
+
+console.log(sqrtSoma(4, 5));
+//--------------------------
+console.log(lista[1]);
+
+let lista2 = ["teste", "test", [1, 2]];
+console.log(lista2[2]);
+console.log(lista2[2][1]);
+
+let ingredientes = ["ovo", "farinha", "leite", "manteiga", "chocolate"];
+ingredientes[6] = "fermento";
+console.log(ingredientes.length);
+console.log(ingredientes);
+
+let ingredientes2 = ["ovo", "farinha", "leite", "manteiga", "chocolate"];
+ingredientes2.push("fermento");
+console.log(ingredientes2.length);
+console.log(ingredientes2);
+
+ingredientes2.pop(); // Remove o último
+console.log(ingredientes2);
+
+ingredientes2.shift(); // Remove o primeiro
+console.log(ingredientes2);
+//--------------------------
+let personagem = {
+  nome: "Raner",
+  classe: "Tiefling",
+};
+
+console.log(personagem);
+console.log(personagem.classe);
+//--------------------------
+console.log("Tabuada:");
+
+for (let i = 1; i <= 10; i++) {
+  for (let n = 0; n <= 10; n++) {
+    console.log(`${i} x ${n} = ${i * n}`);
+  }
+  console.log("----------------");
+}
+let diasSemana = [
+  "Domingo",
+  "Segunda",
+  "Terça",
+  "Quarta",
+  "Quinta",
+  "Sexta",
+  "Sábado",
+];
+
+for (let i = 0; i < diasSemana.length; i++) {
+  console.log(diasSemana[i]);
+}
+console.log("----------------");
+
+for (let i in diasSemana) {
+  console.log(diasSemana[i]);
+}
+console.log("----------------");
+
+for (let dia of diasSemana) {
+  console.log(dia);
+}
+//--------------------------
