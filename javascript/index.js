@@ -106,7 +106,7 @@ console.log(ingredientes.length);
 console.log(ingredientes);
 
 let ingredientes2 = ["ovo", "farinha", "leite", "manteiga", "chocolate"];
-ingredientes2.push("fermento");
+ingredientes2.push("fermento"); // Adiciona no final
 console.log(ingredientes2.length);
 console.log(ingredientes2);
 
@@ -155,4 +155,45 @@ console.log("----------------");
 for (let dia of diasSemana) {
   console.log(dia);
 }
+console.log("----------------");
+
+diasSemana.forEach((x) => console.log(x));
+console.log("----------------");
 //--------------------------
+let i = 0;
+while (i < diasSemana.length) {
+  console.log(diasSemana[i]);
+  i++;
+}
+//--------------------------
+let frutas = ["Banana", "Maçã", "Pera", "Uva", "Melancia"];
+
+console.log(frutas);
+
+frutas.sort();
+console.log(frutas);
+
+frutas.reverse();
+console.log(frutas);
+//--------------------------
+let carros = [
+  { nome: "Celta", ano: 2005 },
+  { nome: "Fusca", ano: 1969 },
+  { nome: "Camaro", ano: 2010 },
+  { nome: "Uno", ano: 2000 },
+  { nome: "Gol", ano: 1990 },
+];
+
+console.log(carros);
+
+carros.sort((a, b) => a.ano - b.ano);
+console.log(carros);
+
+let newCarros = carros.filter(x => x.ano >= 2000);
+console.log(newCarros);
+
+console.log(frutas);
+console.log(frutas.indexOf("Uva"));
+
+console.log(carros);
+console.log(carros.includes("Siena"));
